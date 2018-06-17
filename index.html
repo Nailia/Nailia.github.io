@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VIS 101 Homework</title>
+
+<style>
+   body    {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    font-family: 'Open Sans';
+        }
+   .HEADER {
+    color: #0055cc;
+    font-family: 'Open Sans';
+        }
+   .QUOTE  {
+    border: 2px solid #eeeeee;
+    padding: 5px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans';
+           }
+    BLOCKQUOTE {
+    position: relative;
+    font-family: 'Open Sans';
+               }
+    BLOCKQUOTE:after {
+    content: "";
+    width: 2px;
+    background: #777777;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    font-family: 'Open Sans';
+                     }
+    BLOCKQUOTE p {
+    padding-left: 7px;
+    font-family: 'Open Sans';
+                 }
+    BLOCKQUPTE cite {
+    font-style: normal;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+                    }
+    #BTN {
+      background-color: #ec0b43;
+      color: #F5F5F5;
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      font-family: 'Open Sans';
+    }
+}
+</style>
+	
+    <script language="javascript">
+    function output() {
+    	var txt=[];
+    	txt[0]="\"Success is one percent inspiration, ninety-nine percent perspiration.\" - Thomas Edison";
+    	txt[1]="\"You miss 100% of the shots you don’t take.\" – Wayne Gretzky";
+        txt[2]="\"It is not the strongest of the species that survives, nor the most intelligent, but the one most responsive to change.\" – Charles Darwin";
+	txt[3]="\"The will to win, the desire to succeed, the urge to reach your full potential… these are the keys that will unlock the door to personal excellence.\" – Confucius";
+	txt[4]="\"Fall seven times and stand up eight.\" – Japanese Proverb";
+	txt[5]="\"Success is not the key to happiness. Happiness is the key to success.\" – Herman Cain";
+	txt[6]="\"When I do good, I feel good. When I do bad, I feel bad. That’s my religion.\" – Abraham Lincoln";
+        var i=Math.floor(Math.random()*txt.length);
+    	document.getElementById("BLOCKQUOTE").innerHTML = (txt[i]);
+    }
+    </script>
+	
+	
+</head>
+<body>
+    <h1 class ="HEADER">First VIS101 Homework</h1>
+    <div class ="QUOTE">
+        <h2>Quote Of the Day:</h2>
+        <BLOCKQUOTE>
+            <p id="BLOCKQUOTE">"All successful people men and women are big dreamers. They imagine what their future could be, ideal in every respect, and then they work every day toward their distant vision, that goal or purpose." – Brian Tracy</p>
+        </BLOCKQUOTE>
+    </div>
+    <button id="BTN" onclick="output()">Change Quote Of the Day</button>
+    
+    
+</body>
+</html>
